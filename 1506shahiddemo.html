@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shahid Auto Repairing | Expert Car Repair in Al Qusais, Dubai</title>
+  <meta name="description" content="Shahid Auto Repairing in Al Qusais Industrial Area, Dubai. Top-rated auto repair shop with 4.5★ rating. Expert mechanics, fair prices, fast service. Call 052 590 3921." />
+  <meta name="keywords" content="auto repair Dubai, car repair Al Qusais, Shahid Auto Repairing, mechanic Dubai, car service Dubai, Al Qusais garage, engine repair Dubai, car workshop Dubai" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Shahid Auto Repairing" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Shahid Auto Repairing | Al Qusais, Dubai" />
+  <meta property="og:description" content="Expert auto repair in Dubai with 4.5★ Google rating. Skilled technicians, affordable prices, fast turnaround. Visit us at Al Qusais Ind. First." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://picsum.photos/seed/autogarage/1200/630" />
+  <meta property="og:url" content="https://shahidautorepairing.com" />
+  <meta property="og:locale" content="en_AE" />
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Shahid Auto Repairing",
+    "image": "https://picsum.photos/seed/autogarage/800/600",
+    "telephone": "+971525903921",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Al Qusais Ind. First",
+      "addressLocality": "Dubai",
+      "addressCountry": "AE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "25.2854",
+      "longitude": "55.3887"
+    },
+    "url": "https://shahidautorepairing.com",
+    "openingHoursSpecification": [
+      {"@type": "OpeningHoursSpecification","dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday","Saturday"],"opens": "08:00","closes": "21:00"},
+      {"@type": "OpeningHoursSpecification","dayOfWeek": ["Friday"],"opens": "14:00","closes": "21:00"}
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "reviewCount": "60"
+    },
+    "priceRange": "$$"
+  }
+  </script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Orbitron:wght@700;900&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            neon: '#f97316',
+            neonHover: '#fb923c',
+            dark: '#0a0a0f',
+            darkCard: '#111118',
+            darkBorder: '#1e1e2e',
+            steel: '#94a3b8',
+            accent: '#f59e0b'
+          },
+          fontFamily: {
+            raj: ['Rajdhani', 'sans-serif'],
+            inter: ['Inter', 'sans-serif'],
+            orbit: ['Orbitron', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * { scroll-behavior: smooth; }
+
+    body {
+      background-color: #0a0a0f;
+      font-family: 'Inter', sans-serif;
+      color: #e2e8f0;
+      overflow-x: hidden;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0a0a0f; }
+    ::-webkit-scrollbar-thumb { background: #f97316; border-radius: 3px; }
+
+    /* Animations */
+    @keyframes fade-in-up {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slide-in-left {
+      from { opacity: 0; transform: translateX(-60px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes slide-in-right {
+      from { opacity: 0; transform: translateX(60px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes pulse-ring {
+      0% { transform: scale(1); opacity: 1; }
+      100% { transform: scale(1.8); opacity: 0; }
+    }
+
+    @keyframes glow-pulse {
+      0%, 100% { box-shadow: 0 0 15px rgba(249,115,22,0.4), 0 0 30px rgba(249,115,22,0.2); }
+      50% { box-shadow: 0 0 30px rgba(249,115,22,0.8), 0 0 60px rgba(249,115,22,0.4); }
+    }
+
+    @keyframes neon-flicker {
+      0%, 95%, 100% { opacity: 1; }
+      96% { opacity: 0.4; }
+      97% { opacity: 1; }
+      98% { opacity: 0.2; }
+      99% { opacity: 1; }
+    }
+
+    @keyframes rotate-slow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes scanline {
+      0% { top: -10%; }
+      100% { top: 110%; }
+    }
+
+    .animate-fade-up { animation: fade-in-up 0.7s ease forwards; }
+    .animate-slide-left { animation: slide-in-left 0.7s ease forwards; }
+    .animate-slide-right { animation: slide-in-right 0.7s ease forwards; }
+
+    .scroll-animate { opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .scroll-animate.visible { opacity: 1; transform: translateY(0); }
+
+    .scroll-animate-left { opacity: 0; transform: translateX(-60px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .scroll-animate-left.visible { opacity: 1; transform: translateX(0); }
+
+    .scroll-animate-right { opacity: 0; transform: translateX(60px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .scroll-animate-right.visible { opacity: 1; transform: translateX(0); }
+
+    /* Glassmorphism Nav */
+    .glass-nav {
+      background: rgba(10, 10, 15, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(249,115,22,0.15);
+    }
+
+    /* Hero gradient overlay */
+    .hero-bg {
+      background: linear-gradient(135deg, #0a0a0f 0%, #0f0f1a 40%, #1a0a00 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-bg::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, rgba(249,115,22,0.12) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      bottom: -30%;
+      left: -10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(245,158,11,0.06) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    /* Gear decoration */
+    .gear-bg {
+      position: absolute;
+      opacity: 0.04;
+      font-size: 300px;
+      right: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+      animation: rotate-slow 30s linear infinite;
+      color: #f97316;
+    }
+
+    /* Neon button */
+    .btn-neon {
+      background: linear-gradient(135deg, #f97316, #f59e0b);
+      color: #000;
+      font-weight: 700;
+      font-family: 'Rajdhani', sans-serif;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      animation: glow-pulse 2.5s ease-in-out infinite;
+    }
+
+    .btn-neon:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 40px rgba(249,115,22,0.5);
+      background: linear-gradient(135deg, #fb923c, #f59e0b);
+    }
+
+    .btn-neon::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -75%;
+      width: 50%;
+      height: 200%;
+      background: rgba(255,255,255,0.2);
+      transform: skewX(-20deg);
+      transition: left 0.5s ease;
+    }
+
+    .btn-neon:hover::before { left: 125%; }
+
+    /* Service cards */
+    .service-card {
+      background: linear-gradient(135deg, #111118, #1a1a28);
+      border: 1px solid rgba(249,115,22,0.1);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #f97316, transparent);
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(249,115,22,0.4);
+      box-shadow: 0 20px 60px rgba(249,115,22,0.15);
+    }
+
+    .service-card:hover::before { transform: scaleX(1); }
+
+    /* Review card */
+    .review-card {
+      background: linear-gradient(135deg, #111118, #15151f);
+      border: 1px solid rgba(249,115,22,0.08);
+      transition: all 0.3s ease;
+    }
+
+    .review-card:hover {
+      transform: translateY(-5px) scale(1.01);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+      border-color: rgba(249,115,22,0.25);
+    }
+
+    /* Status badge */
+    .status-open { color: #22c55e; }
+    .status-closed { color: #ef4444; }
+
+    .dot-open {
+      width: 10px;
+      height: 10px;
+      background: #22c55e;
+      border-radius: 50%;
+      position: relative;
+      display: inline-block;
+    }
+
+    .dot-open::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #22c55e;
+      border-radius: 50%;
+      animation: pulse-ring 1.5s ease-out infinite;
+    }
+
+    .dot-closed {
+      width: 10px;
+      height: 10px;
+      background: #ef4444;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* WhatsApp float */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 9999;
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 25px rgba(37,211,102,0.4);
+      transition: all 0.3s ease;
+    }
+
+    .whatsapp-float::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(37,211,102,0.4);
+      border-radius: 50%;
+      animation: pulse-ring 2s ease-out infinite;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1) translateY(-3px);
+      box-shadow: 0 15px 40px rgba(37,211,102,0.6);
+    }
+
+    /* Neon text */
+    .neon-text {
+      color: #f97316;
+      text-shadow: 0 0 20px rgba(249,115,22,0.5);
+    }
+
+    /* Stats bar */
+    .stat-card {
+      background: linear-gradient(135deg, rgba(249,115,22,0.1), rgba(245,158,11,0.05));
+      border: 1px solid rgba(249,115,22,0.2);
+    }
+
+    /* Hours table */
+    .hours-row {
+      border-bottom: 1px solid rgba(249,115,22,0.08);
+      transition: background 0.2s;
+    }
+
+    .hours-row:hover { background: rgba(249,115,22,0.05); }
+
+    .today-row { background: rgba(249,115,22,0.08); }
+
+    /* Form inputs */
+    .form-input {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(249,115,22,0.2);
+      color: #e2e8f0;
+      transition: all 0.3s ease;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: #f97316;
+      box-shadow: 0 0 20px rgba(249,115,22,0.15);
+      background: rgba(249,115,22,0.05);
+    }
+
+    /* Map placeholder */
+    .map-container {
+      background: linear-gradient(135deg, #111118, #1a1020);
+      border: 1px solid rgba(249,115,22,0.15);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .map-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(249,115,22,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(249,115,22,0.05) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    /* Scanline effect */
+    .scanline::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: rgba(249,115,22,0.3);
+      animation: scanline 4s linear infinite;
+      pointer-events: none;
+    }
+
+    /* Section divider */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(249,115,22,0.3), transparent);
+    }
+
+    /* Logo text */
+    .logo-text { animation: neon-flicker 8s ease infinite; }
+
+    /* Mobile menu */
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+  </style>
+</head>
+
+<body class="bg-dark">
+
+  <!-- ======================== WHATSAPP FLOAT ======================== -->
+  <a href="https://wa.me/971525903921" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp text-white text-3xl"></i>
+  </a>
+
+  <!-- ======================== STICKY NAV ======================== -->
+  <header id="main-header" class="glass-nav fixed top-0 left-0 right-0 z-50">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-amber-500 rounded-lg flex items-center justify-center shadow-lg">
+          <i class="fas fa-car-wrench text-black text-lg"></i>
+        </div>
+        <div>
+          <div class="font-orbit text-lg font-bold logo-text" style="color:#f97316; letter-spacing:1px; line-height:1;">SHAHID</div>
+          <div class="font-raj text-xs text-slate-400 tracking-widest uppercase">Auto Repairing</div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#services" class="font-raj text-slate-300 hover:text-orange-400 transition-colors duration-200 uppercase tracking-wide text-sm">Services</a>
+        <a href="#reviews" class="font-raj text-slate-300 hover:text-orange-400 transition-colors duration-200 uppercase tracking-wide text-sm">Reviews</a>
+        <a href="#contact" class="font-raj text-slate-300 hover:text-orange-400 transition-colors duration-200 uppercase tracking-wide text-sm">Contact</a>
+
+        <!-- Hours Badge -->
+        <div class="flex items-center gap-2 bg-black/40 border border-orange-500/20 rounded-full px-4 py-1.5">
+          <span id="nav-status-dot" class="dot-closed"></span>
+          <span id="nav-status-text" class="font-raj text-sm font-semibold text-red-400">Checking...</span>
+        </div>
+
+        <a href="tel:0525903921" class="btn-neon px-5 py-2 rounded-lg text-sm font-raj flex items-center gap-2">
+          <i class="fas fa-phone"></i>
+          052 590 3921
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="menu-toggle" class="md:hidden text-orange-400 text-2xl" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden border-t border-orange-500/10 bg-dark/95 px-6 py-4 space-y-4">
+      <a href="#services" class="block font-raj text-slate-300 hover:text-orange-400 uppercase tracking-wide" onclick="closeMenu()">Services</a>
+      <a href="#reviews" class="block font-raj text-slate-300 hover:text-orange-400 uppercase tracking-wide" onclick="closeMenu()">Reviews</a>
+      <a href="#contact" class="block font-raj text-slate-300 hover:text-orange-400 uppercase tracking-wide" onclick="closeMenu()">Contact</a>
+      <div class="flex items-center gap-2">
+        <span id="mob-status-dot" class="dot-closed"></span>
+        <span id="mob-status-text" class="font-raj text-sm font-semibold text-red-400">Checking...</span>
+      </div>
+      <a href="tel:0525903921" class="btn-neon block text-center px-5 py-2 rounded-lg text-sm font-raj">
+        <i class="fas fa-phone mr-2"></i>052 590 3921
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======================== HERO SECTION ======================== -->
+    <section class="hero-bg min-h-screen flex items-center pt-24 pb-16 relative">
+      <i class="fas fa-gear gear-bg"></i>
+
+      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center w-full relative z-10">
+
+        <!-- Left Content -->
+        <div class="animate-fade-up">
+          <div class="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/30 rounded-full px-4 py-2 mb-6">
+            <i class="fas fa-map-marker-alt text-orange-400 text-xs"></i>
+            <span class="font-raj text-orange-300 text-sm tracking-wide uppercase">Al Qusais Ind. First · Dubai</span>
+          </div>
+
+          <h1 class="font-raj text-5xl md:text-6xl lg:text-7xl font-bold leading-none mb-4" style="letter-spacing:-1px;">
+            <span class="text-white">EXPERT</span><br />
+            <span class="neon-text">AUTO REPAIR</span><br />
+            <span class="text-slate-300 text-4xl md:text-5xl">IN DUBAI</span>
+          </h1>
+
+          <p class="font-inter text-slate-400 text-lg leading-relaxed mb-8 max-w-lg">
+            Trusted by hundreds of Dubai drivers. Skilled technicians, transparent pricing, and fast turnarounds — your car is in expert hands at Shahid Auto Repairing.
+          </p>
+
+          <!-- Rating Badge -->
+          <div class="flex items-center gap-4 mb-8 flex-wrap">
+            <div class="flex items-center gap-2 bg-black/50 border border-amber-500/30 rounded-xl px-4 py-3">
+              <div class="flex gap-0.5">
+                <i class="fas fa-star text-amber-400 text-sm"></i>
+                <i class="fas fa-star text-amber-400 text-sm"></i>
+                <i class="fas fa-star text-amber-400 text-sm"></i>
+                <i class="fas fa-star text-amber-400 text-sm"></i>
+                <i class="fas fa-star-half-alt text-amber-400 text-sm"></i>
+              </div>
+              <span class="font-orbit text-amber-400 font-bold text-lg">4.5</span>
+              <span class="font-inter text-slate-500 text-sm">(60 reviews)</span>
+            </div>
+
+            <div class="flex items-center gap-2 bg-black/50 border border-green-500/30 rounded-xl px-4 py-3">
+              <span id="hero-status-dot" class="dot-closed"></span>
+              <span id="hero-status-text" class="font-raj font-semibold text-red-400">Checking...</span>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex gap-4 flex-wrap">
+            <a href="https://wa.me/971525903921" target="_blank" class="btn-neon px-8 py-4 rounded-xl text-base font-raj flex items-center gap-3">
+              <i class="fab fa-whatsapp text-xl"></i>
+              WhatsApp Us Now
+            </a>
+            <a href="tel:0525903921" class="font-raj px-8 py-4 rounded-xl text-base border border-orange-500/40 text-orange-400 hover:bg-orange-500/10 transition-all duration-300 hover:-translate-y-1 flex items-center gap-3">
+              <i class="fas fa-phone"></i>
+              Call Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Right — Image -->
+        <div class="relative animate-slide-right hidden md:block">
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl" style="box-shadow: 0 0 60px rgba(249,115,22,0.2);">
+            <img src="https://picsum.photos/seed/cargarage2024/800/600" alt="Shahid Auto Repairing Workshop Dubai" class="w-full object-cover rounded-2xl" style="height:500px;" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent rounded-2xl"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-dark/30 to-transparent rounded-2xl"></div>
+
+            <!-- Floating badge on image -->
+            <div class="absolute bottom-6 left-6 right-6 bg-black/70 backdrop-blur-md rounded-xl p-4 border border-orange-500/20">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-amber-500 rounded-full flex items-center justify-center shrink-0">
+                  <i class="fas fa-shield-halved text-black text-lg"></i>
+                </div>
+                <div>
+                  <p class="font-raj text-white font-bold">Quality Guaranteed</p>
+                  <p class="font-inter text-slate-400 text-xs">Trusted by 60+ happy customers in Dubai</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Decorative elements -->
+          <div class="absolute -top-4 -right-4 w-24 h-24 border border-orange-500/20 rounded-full"></div>
+          <div class="absolute -bottom-8 -left-8 w-40 h-40 border border-amber-500/10 rounded-full"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== STATS STRIP ======================== -->
+    <section class="py-12 border-y border-orange-500/10 bg-black/40">
+      <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="stat-card rounded-2xl p-6 text-center scroll-animate">
+          <div class="font-orbit text-4xl font-bold neon-text mb-1">4.5<span class="text-amber-400">★</span></div>
+          <div class="font-raj text-slate-400 uppercase tracking-wide text-sm">Google Rating</div>
+        </div>
+        <div class="stat-card rounded-2xl p-6 text-center scroll-animate" style="transition-delay:0.1s">
+          <div class="font-orbit text-4xl font-bold neon-text mb-1">60+</div>
+          <div class="font-raj text-slate-400 uppercase tracking-wide text-sm">Happy Reviews</div>
+        </div>
+        <div class="stat-card rounded-2xl p-6 text-center scroll-animate" style="transition-delay:0.2s">
+          <div class="font-orbit text-4xl font-bold neon-text mb-1">7<span class="text-xl">days</span></div>
+          <div class="font-raj text-slate-400 uppercase tracking-wide text-sm">Open Per Week</div>
+        </div>
+        <div class="stat-card rounded-2xl p-6 text-center scroll-animate" style="transition-delay:0.3s">
+          <div class="font-orbit text-4xl font-bold neon-text mb-1">13<span class="text-xl">hrs</span></div>
+          <div class="font-raj text-slate-400 uppercase tracking-wide text-sm">Daily Service</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== SERVICES SECTION ======================== -->
+    <section id="services" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+
+        <div class="text-center mb-16 scroll-animate">
+          <span class="font-raj text-orange-400 uppercase tracking-widest text-sm">What We Fix</span>
+          <h2 class="font-orbit text-4xl md:text-5xl font-bold text-white mt-3 mb-4">OUR SERVICES</h2>
+          <div class="w-20 h-1 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full mx-auto mb-4"></div>
+          <p class="font-inter text-slate-400 max-w-xl mx-auto">From routine maintenance to complex engine diagnostics — we handle it all with precision and care.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Service Cards -->
+          <div class="service-card rounded-2xl p-8 scroll-animate">
+            <div class="w-14 h-14 bg-gradient-to-br from-orange-500/20 to-amber-500/10 rounded-xl flex items-center justify-center mb-6 border border-orange-500/20">
+              <i class="fas fa-engine text-orange-400 text-2xl"></i>
+            </div>
+            <h3 class="font-raj text-xl font-bold text-white mb-3">Engine Repair & Diagnostics</h3>
+            <p class="font-inter text-slate-500 text-sm leading-relaxed">Advanced engine diagnostics with modern tools. We identify and fix engine issues efficiently, from minor to complex overhauls.</p>
+            <div class="mt-4 pt-4 border-t border-orange-500/10">
+              <span class="text-orange-400 text-sm font-raj flex items-center gap-2 hover:gap-3 transition-all cursor-pointer">
+                Learn More <i class="fas fa-arrow-right text-xs"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="service-card rounded-2xl p-8 scroll-animate" style="transition-delay:0.1s">
+            <div class="w-14 h-14 bg-gradient-to-br from-orange-500/20 to-amber-500/10 rounded-xl flex items-center justify-center mb-6 border border-orange-500/20">
+              <i class="fas fa-oil-can text-orange-400 text-2xl"></i>
+            </div>
+            <h3 class="font-raj text-xl font-bold text-white mb-3">Oil Change & Lubrication</h3>
+            <p class="font-inter text-slate-500 text-sm leading-relaxed">Quick and professional oil changes using premium grade oils. Extend your engine life and maintain peak performance.</p>
+            <div class="mt-4 pt-4 border-t border-orange-500/10">
+              <span class="text-orange-400 text-sm font-raj flex items-center gap-2 hover:gap-3 transition-all cursor-pointer">
+                Learn More <i class="fas fa-arrow-right text-xs"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="service-card rounded-2xl p-8 scroll-animate" style="transition-delay:0.2s">
+            <div class="w-14 h-14 bg-gradient-to-br from-orange-500/20 to-amber-500/10 rounded-xl flex items-center justify-center mb-6 border border-orange-500/20">
+              <i class="fas fa-brake-warning text-orange-400 text-2xl"></i>
+            </div>
+            <h3 class="font-raj text-xl font-bold text-white mb-3">Brake System Repair</h3>
+            <p class="font-inter text-slate-500 text-sm leading-relaxed">Safety-first brake inspection, pad replacement, disc machining, and full brake system servicing for all vehicle types.</p>
+            <div class="mt-4 pt-4 border-t border-orange-500/10">
+              <span class="text-orange-400 text-sm font-raj flex items-center gap-2 hover:gap-3 transition-all cursor-pointer">
+                Learn More <i class="fas fa-arrow-right text-xs"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="service-card rounded-2xl p-8 scroll-animate" style="transition-delay:0.1s">
+            <div class="w-14 h-14 bg-gradient-to-br from-orange-500/20 to-amber-500/10 rounded-xl flex items-center justify-center mb-6 border border-orange-500/20">
+              <i class="fas fa-snowflake text-orange-400 text-2xl"></i>
+            </div>
+            <h3 class="font-raj text-xl font-bold text-white mb-3">AC Repair & Service</h3>
+            <p class="font-inter text-slate-500 text-sm leading-relaxed">Complete AC system diagnostics, gas recharge, compressor repair, and filter cleaning — stay cool in Dubai's heat.</p>
+            <div class="mt-4 pt-4 border-t border-orange-500/10">
+              <span class="text-orange-400 text-sm font-raj flex items-center gap-2 hover:gap-3 transition-all cursor-pointer">
+                Learn More <i class="fas fa-arrow-right text-xs"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="service-card rounded-2xl p-8 scroll-animate" style="transition-delay:0.2s">
+            <div class="w-14 h-14 bg-gradient-to-br from-orange-500/20 to-amber-500/10 rounded-xl flex items-center justify-center mb-6 border border-orange-500/20">
+              <i class="fas fa-gears text-orange-400 text-2xl"></i>
+            </div>
+            <h3 class="font-raj text-xl font-bold text-white mb-3">Transmission Service</h3>
+            <p class="font-inter text-slate-500 text-sm leading-relaxed">Manual and automatic gearbox repair, transmission fluid changes, and clutch replacement at competitive prices.</p>
+            <div class="mt-4 pt-4 border-t border-orange-500/10">
+              <span class="text-orange-400 text-sm font-raj flex items-center gap-2 hover:gap-3 transition-all cursor-pointer">
+                Learn More <i class="fas fa-arrow-right text-xs"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="service-card rounded-2xl p-8 scroll-animate" style="transition-delay:0.3s">
+            <div class="w-14 h-14 bg-gradient-to-br from-orange-500/20 to-amber-500/10 rounded-xl flex items-center justify-center mb-6 border border-orange-500/20">
+              <i class="fas fa-car-battery text-orange-400 text-2xl"></i>
+            </div>
+            <h3 class="font-raj text-xl font-bold text-white mb-3">Electrical & Battery</h3>
+            <p class="font-inter text-slate-500 text-sm leading-relaxed">Full electrical system checks, battery testing and replacement, wiring repairs, and ECU diagnostics by skilled technicians.</p>
+            <div class="mt-4 pt-4 border-t border-orange-500/10">
+              <span class="text-orange-400 text-sm font-raj flex items-center gap-2 hover:gap-3 transition-all cursor-pointer">
+                Learn More <i class="fas fa-arrow-right text-xs"></i>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Extra services tags -->
+        <div class="mt-10 flex flex-wrap gap-3 justify-center scroll-animate">
+          <span class="font-raj text-sm text-slate-400 bg-darkCard border border-darkBorder px-4 py-2 rounded-full"><i class="fas fa-check text-orange-400 mr-2 text-xs"></i>Suspension Repair</span>
+          <span class="font-raj text-sm text-slate-400 bg-darkCard border border-darkBorder px-4 py-2 rounded-full"><i class="fas fa-check text-orange-400 mr-2 text-xs"></i>Tire Replacement</span>
+          <span class="font-raj text-sm text-slate-400 bg-darkCard border border-darkBorder px-4 py-2 rounded-full"><i class="fas fa-check text-orange-400 mr-2 text-xs"></i>Wheel Alignment</span>
+          <span class="font-raj text-sm text-slate-400 bg-darkCard border border-darkBorder px-4 py-2 rounded-full"><i class="fas fa-check text-orange-400 mr-2 text-xs"></i>Radiator Repair</span>
+          <span class="font-raj text-sm text-slate-400 bg-darkCard border border-darkBorder px-4 py-2 rounded-full"><i class="fas fa-check text-orange-400 mr-2 text-xs"></i>Exhaust System</span>
+          <span class="font-raj text-sm text-slate-400 bg-darkCard border border-darkBorder px-4 py-2 rounded-full"><i class="fas fa-check text-orange-400 mr-2 text-xs"></i>Pre-Purchase Inspection</span>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="divider mx-12"></div>
+
+    <!-- ======================== WHY CHOOSE US ======================== -->
+    <section class="py-24 px-6 relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-r from-orange-500/3 to-transparent pointer-events-none"></div>
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+        <div class="relative scroll-animate-left">
+          <div class="rounded-2xl overflow-hidden" style="box-shadow: 0 0 40px rgba(249,115,22,0.15);">
+            <img src="https://picsum.photos/seed/mechanicwork/700/500" alt="Expert mechanics at Shahid Auto Repairing Dubai" class="w-full object-cover rounded-2xl" style="height:420px;" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark/60 to-transparent rounded-2xl"></div>
+          </div>
+          <!-- Floating card -->
+          <div class="absolute -bottom-6 -right-6 bg-darkCard border border-orange-500/30 rounded-2xl p-5 shadow-2xl" style="max-width:220px;">
+            <div class="flex items-center gap-3 mb-2">
+              <i class="fas fa-trophy text-amber-400 text-2xl"></i>
+              <div>
+                <div class="font-orbit text-orange-400 text-xl font-bold">4.5★</div>
+                <div class="font-raj text-slate-500 text-xs">Google Rating</div>
+              </div>
+            </div>
+            <p class="font-inter text-slate-400 text-xs">"Best garage I've found in Dubai for money/quality balance."</p>
+          </div>
+        </div>
+
+        <div class="scroll-animate-right">
+          <span class="font-raj text-orange-400 uppercase tracking-widest text-sm">Why Choose Us</span>
+          <h2 class="font-orbit text-4xl font-bold text-white mt-3 mb-6">DUBAI'S TRUSTED<br /><span class="neon-text">AUTO EXPERTS</span></h2>
+
+          <div class="space-y-5">
+            <div class="flex gap-4 items-start">
+              <div class="w-10 h-10 bg-orange-500/15 rounded-xl flex items-center justify-center shrink-0 border border-orange-500/20 mt-1">
+                <i class="fas fa-user-gear text-orange-400"></i>
+              </div>
+              <div>
+                <h3 class="font-raj text-lg font-bold text-white mb-1">Highly Skilled Technicians</h3>
+                <p class="font-inter text-slate-500 text-sm">Our experienced team delivers precision repairs with in-depth knowledge across all car makes and models.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 items-start">
+              <div class="w-10 h-10 bg-orange-500/15 rounded-xl flex items-center justify-center shrink-0 border border-orange-500/20 mt-1">
+                <i class="fas fa-hand-holding-dollar text-orange-400"></i>
+              </div>
+              <div>
+                <h3 class="font-raj text-lg font-bold text-white mb-1">Affordable, Honest Pricing</h3>
+                <p class="font-inter text-slate-500 text-sm">Transparent estimates with no hidden costs. Competitive rates that honestly surprise customers — in the best way.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 items-start">
+              <div class="w-10 h-10 bg-orange-500/15 rounded-xl flex items-center justify-center shrink-0 border border-orange-500/20 mt-1">
+                <i class="fas fa-bolt text-orange-400"></i>
+              </div>
+              <div>
+                <h3 class="font-raj text-lg font-bold text-white mb-1">Fast Parts Sourcing</h3>
+                <p class="font-inter text-slate-500 text-sm">We find the exact part you need incredibly fast, minimizing downtime and getting you back on the road quickly.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 items-start">
+              <div class="w-10 h-10 bg-orange-500/15 rounded-xl flex items-center justify-center shrink-0 border border-orange-500/20 mt-1">
+                <i class="fas fa-comments text-orange-400"></i>
+              </div>
+              <div>
+                <h3 class="font-raj text-lg font-bold text-white mb-1">Clear Communication</h3>
+                <p class="font-inter text-slate-500 text-sm">We explain everything in detail, provide fair estimates, and keep you updated throughout the entire repair process.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <a href="#contact" class="btn-neon inline-flex items-center gap-3 px-8 py-4 rounded-xl font-raj text-base">
+              <i class="fas fa-wrench"></i>
+              Book a Service
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="divider mx-12"></div>
+
+    <!-- ======================== REVIEWS SECTION ======================== -->
+    <section id="reviews" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+
+        <div class="text-center mb-16 scroll-animate">
+          <span class="font-raj text-orange-400 uppercase tracking-widest text-sm">What Customers Say</span>
+          <h2 class="font-orbit text-4xl md:text-5xl font-bold text-white mt-3 mb-4">REAL REVIEWS</h2>
+          <div class="w-20 h-1 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full mx-auto mb-4"></div>
+
+          <!-- Overall Rating -->
+          <div class="inline-flex flex-col items-center bg-darkCard border border-amber-500/20 rounded-2xl px-8 py-6 mt-4">
+            <div class="font-orbit text-6xl font-bold text-amber-400 mb-2">4.5</div>
+            <div class="flex gap-1 mb-2">
+              <i class="fas fa-star text-amber-400 text-xl"></i>
+              <i class="fas fa-star text-amber-400 text-xl"></i>
+              <i class="fas fa-star text-amber-400 text-xl"></i>
+              <i class="fas fa-star text-amber-400 text-xl"></i>
+              <i class="fas fa-star-half-alt text-amber-400 text-xl"></i>
+            </div>
+            <div class="font-raj text-slate-400 text-sm">Based on 60 Google Reviews</div>
+          </div>
+        </div>
+
+        <!-- Review Cards -->
+        <div class="grid md:grid-cols-3 gap-6">
+
+          <article class="review-card rounded-2xl p-8 scroll-animate">
+            <div class="flex gap-1 mb-4">
+              <i class="fas fa-star text-amber-400 text-sm"></i>
+              <i class="fas fa-star text-amber-400 text-sm"></i>
+              <i class="fas fa-star text-amber-400 text-sm"></i>
+              <i class="fas fa-star text-amber-400 text-sm"></i>
+              <i class="fas fa-star text-amber-400 text-sm"></i>
+            </div>
+            <p class="font-inter text-slate-400 text-sm leading-relaxed mb-6 italic">
+              "I had such an excellent experience here! The team went above and beyond — they found the exact piece I needed incredibly fast and at a price that honestly surprised me (in the best way!). Not only are they efficient, but they're also highly professional."
+            </p>
+            <div class="flex items-center gap-3 pt-4 border-t border-orange-500/10">
+              <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-amber-500 rounded-full flex items-center justify-center font-raj font-bold text-black">S</div>
+              <div>
+                <div class="font-raj text-white font-semibold">Sabrina Bidak</div>
+                <div class="font-inter text-slate-600 text-xs">7 months ago · Google Review</div>
+              </div>
+              <i class="fab fa-google text-blue-400 ml-auto"></i>
+            </div>
+          </article>
+
+          <article class="review-card rounded-2xl p-8 scroll-animate" style="transition-delay:0.15s">
+            <div class="flex gap-1 mb-4">
+              <i class="fas fa-star text-amber-400 text-sm"></i>
+              <i class="fas fa-star text-amber-400 text-sm"></i>
+              <i class="fas fa-star text-amber-400 text-sm"></i>
+              <i class="fas fa-star text-amber-400 text-sm"></i>
+              <i class="fas fa-star text-amber-400 text-sm"></i>
+            </div>
+            <p class="font-inter text-slate-400 text-sm leading-relaxed mb-6 italic">
+              "I had a great experience with Mohammad Shahid Auto Repairing. From the moment I walked in, the staff were friendly, professional, and very clear about the work needed. They explained everything in detail, gave me a fair estimate, and kept me updated throughout."
+            </p>
+            <div class="flex items-center gap-3 pt-4 border-t border-orange-500/10">
+              <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-full flex items-center justify-center font-raj font-bold text-white">S</div>
+              <div>
+                <div class="font-raj text-white font-semibold">Saquib Anwar</div>
+                <div class="font-inter text-slate-600 text-xs">Local Guide · 7 months ago · Google</div>
+              </div>
+              <i class="fab fa-google text-blue-400 ml-auto"></i>
+            </div>
+          </article>
+
+          <article class="review-card rounded-2xl p-8 scroll-animate" style="transition-delay:0.3s">
+            <div class="flex gap-1 mb-4">
+              <i class="fas fa-star text-amber-400 text-sm"></i>
+              <i class="fas fa-star text-amber-400 text-sm"></i>
+              <i class="fas fa-star text-amber-400 text-sm"></i>
+              <i class="fas fa-star text-amber-400 text-sm"></i>
+              <i class="fas fa-star text-amber-400 text-sm"></i>
+            </div>
+            <p class="font-inter text-slate-400 text-sm leading-relaxed mb-6 italic">
+              "I've been in several garages before, small and big ones, but wasn't happy with the results. Shahid Auto Repairing has the best money/quality balanced service. Highly qualified and respectful team. These guys know what they're doing. Totally satisfied!"
+            </p>
+            <div class="flex items-center gap-3 pt-4 border-t border-orange-500/10">
+              <div class="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center font-raj font-bold text-white">F</div>
+              <div>
+                <div class="font-raj text-white font-semibold">Fyodor Skorozhenko</div>
+                <div class="font-inter text-slate-600 text-xs">1 year ago · Google Review</div>
+              </div>
+              <i class="fab fa-google text-blue-400 ml-auto"></i>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Review CTA -->
+        <div class="text-center mt-10 scroll-animate">
+          <a href="https://wa.me/971525903921" target="_blank" class="btn-neon inline-flex items-center gap-3 px-8 py-4 rounded-xl font-raj text-base">
+            <i class="fab fa-whatsapp"></i>
+            Get Your Car Fixed Today
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="divider mx-12"></div>
+
+    <!-- ======================== CONTACT SECTION ======================== -->
+    <section id="contact" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+
+        <div class="text-center mb-16 scroll-animate">
+          <span class="font-raj text-orange-400 uppercase tracking-widest text-sm">Get In Touch</span>
+          <h2 class="font-orbit text-4xl md:text-5xl font-bold text-white mt-3 mb-4">CONTACT US</h2>
+          <div class="w-20 h-1 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full mx-auto"></div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-start">
+
+          <!-- Left: Contact Info + Hours -->
+          <div class="space-y-8 scroll-animate-left">
+
+            <!-- Contact Info -->
+            <div class="bg-darkCard border border-orange-500/15 rounded-2xl p-8">
+              <h3 class="font-raj text-xl font-bold text-white mb-6 flex items-center gap-3">
+                <i class="fas fa-location-dot text-orange-400"></i>
+                Find Us
+              </h3>
+              <div class="space-y-4">
+                <a href="https://maps.google.com/?q=Al+Qusais+Industrial+First+Dubai" target="_blank" class="flex items-start gap-4 group">
+                  <div class="w-10 h-10 bg-orange-500/10 rounded-xl flex items-center justify-center shrink-0 border border-orange-500/20 group-hover:bg-orange-500/20 transition-all">
+                    <i class="fas fa-map-pin text-orange-400 text-sm"></i>
+                  </div>
+                  <div>
+                    <div class="font-raj text-white group-hover:text-orange-400 transition-colors">Al Qusais Ind. First, Dubai</div>
+                    <div class="font-inter text-slate-500 text-xs mt-0.5">Plus Code: 79QP+MQ Dubai</div>
+                  </div>
+                </a>
+                <a href="tel:0525903921" class="flex items-start gap-4 group">
+                  <div class="w-10 h-10 bg-orange-500/10 rounded-xl flex items-center justify-center shrink-0 border border-orange-500/20 group-hover:bg-orange-500/20 transition-all">
+                    <i class="fas fa-phone text-orange-400 text-sm"></i>
+                  </div>
+                  <div>
+                    <div class="font-raj text-white group-hover:text-orange-400 transition-colors">052 590 3921</div>
+                    <div class="font-inter text-slate-500 text-xs mt-0.5">Call us anytime during business hours</div>
+                  </div>
+                </a>
+                <a href="https://wa.me/971525903921" target="_blank" class="flex items-start gap-4 group">
+                  <div class="w-10 h-10 bg-green-500/10 rounded-xl flex items-center justify-center shrink-0 border border-green-500/20 group-hover:bg-green-500/20 transition-all">
+                    <i class="fab fa-whatsapp text-green-400 text-sm"></i>
+                  </div>
+                  <div>
+                    <div class="font-raj text-white group-hover:text-green-400 transition-colors">WhatsApp Chat</div>
+                    <div class="font-inter text-slate-500 text-xs mt-0.5">Fastest way to reach us</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Business Hours -->
+            <div class="bg-darkCard border border-orange-500/15 rounded-2xl p-8">
+              <div class="flex items-center justify-between mb-6">
+                <h3 class="font-raj text-xl font-bold text-white flex items-center gap-3">
+                  <i class="fas fa-clock text-orange-400"></i>
+                  Business Hours
+                </h3>
+                <div class="flex items-center gap-2 bg-black/50 border border-orange-500/20 rounded-full px-3 py-1.5">
+                  <span id="contact-status-dot" class="dot-closed"></span>
+                  <span id="contact-status-text" class="font-raj text-xs font-semibold text-red-400">Checking...</span>
+                </div>
+              </div>
+
+              <div class="space-y-1" id="hours-table">
+                <div class="hours-row flex justify-between items-center py-2.5 px-2 rounded-lg" data-day="0">
+                  <span class="font-raj text-slate-400 text-sm">Sunday</span>
+                  <span class="font-raj text-orange-300 text-sm">8:00 AM – 9:00 PM</span>
+                </div>
+                <div class="hours-row flex justify-between items-center py-2.5 px-2 rounded-lg" data-day="1">
+                  <span class="font-raj text-slate-400 text-sm">Monday</span>
+                  <span class="font-raj text-orange-300 text-sm">8:00 AM – 9:00 PM</span>
+                </div>
+                <div class="hours-row flex justify-between items-center py-2.5 px-2 rounded-lg" data-day="2">
+                  <span class="font-raj text-slate-400 text-sm">Tuesday</span>
+                  <span class="font-raj text-orange-300 text-sm">8:00 AM – 9:00 PM</span>
+                </div>
+                <div class="hours-row flex justify-between items-center py-2.5 px-2 rounded-lg" data-day="3">
+                  <span class="font-raj text-slate-400 text-sm">Wednesday</span>
+                  <span class="font-raj text-orange-300 text-sm">8:00 AM – 9:00 PM</span>
+                </div>
+                <div class="hours-row flex justify-between items-center py-2.5 px-2 rounded-lg" data-day="4">
+                  <span class="font-raj text-slate-400 text-sm">Thursday</span>
+                  <span class="font-raj text-orange-300 text-sm">8:00 AM – 9:00 PM</span>
+                </div>
+                <div class="hours-row flex justify-between items-center py-2.5 px-2 rounded-lg" data-day="5">
+                  <span class="font-raj text-slate-400 text-sm">Friday</span>
+                  <span class="font-raj text-orange-300 text-sm">2:00 PM – 9:00 PM</span>
+                </div>
+                <div class="hours-row flex justify-between items-center py-2.5 px-2 rounded-lg" data-day="6">
+                  <span class="font-raj text-slate-400 text-sm">Saturday</span>
+                  <span class="font-raj text-orange-300 text-sm">8:00 AM – 9:00 PM</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Map Placeholder -->
+            <div class="map-container rounded-2xl h-48 relative overflow-hidden scanline">
+              <div class="map-grid"></div>
+              <div class="absolute inset-0 flex flex-col items-center justify-center gap-3 z-10">
+                <div class="w-16 h-16 bg-orange-500/20 rounded-full flex items-center justify-center border-2 border-orange-500/40" style="box-shadow: 0 0 30px rgba(249,115,22,0.3);">
+                  <i class="fas fa-location-dot text-orange-400 text-2xl"></i>
+                </div>
+                <div class="text-center">
+                  <p class="font-raj text-white text-sm">Al Qusais Ind. First, Dubai</p>
+                  <a href="https://maps.google.com/?q=79QP+MQ+Dubai" target="_blank" class="font-inter text-orange-400 text-xs hover:text-orange-300 transition-colors underline underline-offset-2">
+                    Open in Google Maps →
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: WhatsApp Form -->
+          <div class="scroll-animate-right">
+            <div class="bg-darkCard border border-orange-500/15 rounded-2xl p-8">
+              <div class="mb-6">
+                <div class="flex items-center gap-3 mb-2">
+                  <i class="fab fa-whatsapp text-green-400 text-2xl"></i>
+                  <h3 class="font-raj text-2xl font-bold text-white">Message Us on WhatsApp</h3>
+                </div>
+                <p class="font-inter text-slate-500 text-sm">Fill in your details and we'll take you straight to WhatsApp with a pre-filled message. Fast, easy, convenient.</p>
+              </div>
+
+              <form id="contact-form" onsubmit="sendWhatsApp(event)" class="space-y-5">
+                <div>
+                  <label class="font-raj text-slate-400 text-sm uppercase tracking-wide mb-2 block">Your Name *</label>
+                  <input
+                    type="text"
+                    id="form-name"
+                    required
+                    placeholder="Enter your full name"
+                    class="form-input w-full px-4 py-3 rounded-xl text-sm placeholder-slate-600"
+                  />
+                </div>
+
+                <div>
+                  <label class="font-raj text-slate-400 text-sm uppercase tracking-wide mb-2 block">Service Needed *</label>
+                  <select
+                    id="form-service"
+                    required
+                    class="form-input w-full px-4 py-3 rounded-xl text-sm"
+                  >
+                    <option value="" disabled selected class="bg-dark text-slate-400">Select a service...</option>
+                    <option value="Engine Repair & Diagnostics" class="bg-dark">Engine Repair & Diagnostics</option>
+                    <option value="Oil Change & Lubrication" class="bg-dark">Oil Change & Lubrication</option>
+                    <option value="Brake System Repair" class="bg-dark">Brake System Repair</option>
+                    <option value="AC Repair & Service" class="bg-dark">AC Repair & Service</option>
+                    <option value="Transmission Service" class="bg-dark">Transmission Service</option>
+                    <option value="Electrical & Battery" class="bg-dark">Electrical & Battery</option>
+                    <option value="Suspension Repair" class="bg-dark">Suspension Repair</option>
+                    <option value="Tire & Wheel Service" class="bg-dark">Tire & Wheel Service</option>
+                    <option value="General Inspection" class="bg-dark">General Inspection</option>
+                    <option value="Other" class="bg-dark">Other</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="font-raj text-slate-400 text-sm uppercase tracking-wide mb-2 block">Message</label>
+                  <textarea
+                    id="form-message"
+                    rows="4"
+                    placeholder="Describe your car issue or any additional details..."
+                    class="form-input w-full px-4 py-3 rounded-xl text-sm placeholder-slate-600 resize-none"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn-neon w-full py-4 rounded-xl font-raj text-lg flex items-center justify-center gap-3"
+                >
+                  <i class="fab fa-whatsapp text-2xl"></i>
+                  Send via WhatsApp
+                  <i class="fas fa-arrow-right text-sm"></i>
+                </button>
+
+                <p class="font-inter text-slate-600 text-xs text-center">
+                  <i class="fas fa-lock text-slate-700 mr-1"></i>
+                  Your information is only used to contact you about your repair.
+                </p>
+              </form>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="grid grid-cols-2 gap-4 mt-6">
+              <a href="tel:0525903921" class="bg-darkCard border border-orange-500/15 hover:border-orange-500/40 rounded-2xl p-5 flex items-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl group">
+                <div class="w-10 h-10 bg-orange-500/10 rounded-xl flex items-center justify-center group-hover:bg-orange-500/20 transition-all">
+                  <i class="fas fa-phone text-orange-400"></i>
+                </div>
+                <div>
+                  <div class="font-raj text-white text-sm font-bold">Call Now</div>
+                  <div class="font-inter text-slate-600 text-xs">052 590 3921</div>
+                </div>
+              </a>
+              <a href="https://maps.google.com/?q=79QP+MQ+Dubai" target="_blank" class="bg-darkCard border border-orange-500/15 hover:border-orange-500/40 rounded-2xl p-5 flex items-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl group">
+                <div class="w-10 h-10 bg-orange-500/10 rounded-xl flex items-center justify-center group-hover:bg-orange-500/20 transition-all">
+                  <i class="fas fa-map-location-dot text-orange-400"></i>
+                </div>
+                <div>
+                  <div class="font-raj text-white text-sm font-bold">Get Directions</div>
+                  <div class="font-inter text-slate-600 text-xs">Al Qusais, Dubai</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================== FOOTER ======================== -->
+  <div style="text-align: center; padding: 2rem; background-color: #0f172a; color: #fff; margin-top: 4rem; border-top: 1px solid rgba(249,115,22,0.15);">
+    <p style="margin: 0; font-size: 14px; opacity: 0.9;">&copy; 2026 Shahid Auto Repairing. All Rights Reserved.</p>
+    <p style="margin-top: 5px; font-size: 12px; opacity: 0.5;">Powered by ZAQ Technologies</p>
+  </div>
+
+  <!-- ======================== JAVASCRIPT ======================== -->
+  <script>
+    // ---- Mobile Menu Toggle ----
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+
+    function closeMenu() {
+      mobileMenu.classList.remove('open');
+    }
+
+    // ---- Business Hours Engine ----
+    // Day indices: 0=Sunday, 1=Monday, 2=Tuesday, 3=Wednesday, 4=Thursday, 5=Friday, 6=Saturday
+    const businessHours = {
+      0: { open: 8 * 60, close: 21 * 60 },   // Sun: 8AM-9PM
+      1: { open: 8 * 60, close: 21 * 60 },   // Mon
+      2: { open: 8 * 60, close: 21 * 60 },   // Tue
+      3: { open: 8 * 60, close: 21 * 60 },   // Wed
+      4: { open: 8 * 60, close: 21 * 60 },   // Thu
+      5: { open: 14 * 60, close: 21 * 60 },  // Fri: 2PM-9PM
+      6: { open: 8 * 60, close: 21 * 60 }    // Sat
+    };
+
+    function checkBusinessStatus() {
+      const now = new Date();
+      const day = now.getDay();
+      const currentMinutes = now.getHours() * 60 + now.getMinutes();
+
+      const todayHours = businessHours[day];
+      const isOpen = currentMinutes >= todayHours.open && currentMinutes < todayHours.close;
+
+      // Determine status
+      const statusText = isOpen ? 'Open Now' : 'Closed';
+      const statusColor = isOpen ? '#22c55e' : '#ef4444';
+      const dotClass = isOpen ? 'dot-open' : 'dot-closed';
+
+      // Update all status badges
+      const dotIds = ['nav-status-dot', 'hero-status-dot', 'mob-status-dot', 'contact-status-dot'];
+      const textIds = ['nav-status-text', 'hero-status-text', 'mob-status-text', 'contact-status-text'];
+
+      dotIds.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.className = dotClass;
+        }
+      });
+
+      textIds.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.textContent = statusText;
+          el.style.color = statusColor;
+        }
+      });
+
+      // Highlight today's row in hours table
+      const rows = document.querySelectorAll('.hours-row');
+      rows.forEach(row => {
+        row.classList.remove('today-row');
+        if (parseInt(row.getAttribute('data-day')) === day) {
+          row.classList.add('today-row');
+          // Also bold the text
+          const spans = row.querySelectorAll('span');
+          spans.forEach(s => s.style.fontWeight = '700');
+          spans[0].style.color = '#f97316';
+          spans[1].style.color = isOpen ? '#22c55e' : '#f97316';
+        }
+      });
+    }
+
+    // Run immediately and every minute
+    checkBusinessStatus();
+    setInterval(checkBusinessStatus, 60000);
+
+    // ---- WhatsApp Form Handler ----
+    function sendWhatsApp(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('form-name').value.trim();
+      const service = document.getElementById('form-service').value;
+      const message = document.getElementById('form-message').value.trim();
+
+      if (!name || !service) {
+        alert('Please fill in your name and select a service.');
+        return;
+      }
+
+      const whatsappMessage = `Hello Shahid Auto Repairing! 👋
+
+My name is *${name}*.
+
+🔧 *Service Needed:* ${service}
+
+${message ? `📝 *Additional Details:*\n${message}` : ''}
+
+I found you on your website and would like to book an appointment or get a quote. Please let me know the availability. Thank you!`;
+
+      const encodedMessage = encodeURIComponent(whatsappMessage);
+      const whatsappUrl = `https://wa.me/971525903921?text=${encodedMessage}`;
+      window.open(whatsappUrl, '_blank');
+    }
+
+    // ---- Intersection Observer for Scroll Animations ----
+    const animateOnScroll = (selector, className = 'visible') => {
+      const elements = document.querySelectorAll(selector);
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              entry.target.classList.add(className);
+            }, i * 80);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+      elements.forEach(el => observer.observe(el));
+    };
+
+    animateOnScroll('.scroll-animate');
+    animateOnScroll('.scroll-animate-left');
+    animateOnScroll('.scroll-animate-right');
+
+    // ---- Sticky Nav Shadow on Scroll ----
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('main-header');
+      if (window.scrollY > 50) {
+        header.style.boxShadow = '0 4px 30px rgba(249,115,22,0.1)';
+      } else {
+        header.style.boxShadow = 'none';
+      }
+    });
+  </script>
+
+</body>
+</html>
